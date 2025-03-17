@@ -28,6 +28,10 @@ def main(page: ft.Page):
     page.on_route_change = route_change
     page.go("/formulario")
 
+if __name__ == "__main__":
+    ft.app(target=main, view=ft.WEB_BROWSER, port=8080)
+
+
 
 
 if __name__ == '__main__':
